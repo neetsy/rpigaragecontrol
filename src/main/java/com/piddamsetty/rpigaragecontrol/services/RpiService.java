@@ -16,7 +16,7 @@ public class RpiService {
 
     public RpiService() {
         try {
-            pin4 = gpio.provisionDigitalOutputPin(RaspiPin.GPIO_04);
+            pin4 = gpio.provisionDigitalOutputPin(RaspiPin.GPIO_07);
         } catch (Exception e) {
             System.out.println("Cannot create switchControl. Exception: " + e.getMessage());
         }
