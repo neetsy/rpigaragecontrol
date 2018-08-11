@@ -26,6 +26,7 @@ public class RpiService {
         try {
           pin4.low();
           System.out.println(System.currentTimeMillis());
+          wait(5);
           pin4.high();
 
         }
