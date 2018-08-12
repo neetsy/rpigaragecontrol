@@ -6,6 +6,8 @@ import com.pi4j.io.gpio.GpioPinDigitalOutput;
 import com.pi4j.io.gpio.PinState;
 import com.pi4j.io.gpio.RaspiPin;
 
+import java.util.concurrent.TimeUnit;
+
 /**
  * Created by praneet on 8/11/18.
  */
@@ -26,7 +28,7 @@ public class RpiService {
         try {
           pin4.low();
           System.out.println(System.currentTimeMillis());
-          wait(5);
+          TimeUnit.SECONDS.sleep(5);
           pin4.high();
 
         }
